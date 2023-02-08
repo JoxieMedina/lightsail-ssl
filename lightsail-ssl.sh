@@ -108,7 +108,7 @@ message "INFO" "Stopping Bitnami services (temporarily)"
 
 # Request the certificate
 message "INFO" "Requesting new Let's Encrypt Certificate"
-/opt/bitnami/letsencrypt/lego --accept-tos --tls --email="${email}" --domains="${domain}" --domains="www.${domain}" --path="/opt/bitnami/letsencrypt" run
+/opt/bitnami/letsencrypt/lego --accept-tos --tls --email="${email}" --domains="${domain}" --domains="${domain}" --path="/opt/bitnami/letsencrypt" run
 
 # Check if the certificate request was successfull
 # if not we don't touch anything
